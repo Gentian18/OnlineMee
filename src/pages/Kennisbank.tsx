@@ -2,7 +2,7 @@ import { useState, useMemo } from 'react';
 import { 
   Container, Title, Text, TextInput, Select, SimpleGrid, Card, Badge, Group, Accordion, Loader, Alert 
 } from '@mantine/core';
-import { useKnowledgeItems } from '../hooks/useKnowledgeItems';
+import { useKnowledgeItems } from '../components/hooks/useKnowledgeItems';
 
 export function Kennisbank() {
   const { data: items, isLoading, isError } = useKnowledgeItems();

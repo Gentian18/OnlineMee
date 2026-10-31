@@ -14,10 +14,10 @@ export function Home() {
               Wij zorgen ervoor dat niemand wordt buitengesloten. Online Mee biedt uitleg, hulpmiddelen en een helpende hand voor wie digitaal vastloopt.
             </Text>
             <Group mt="md">
-              <Button component={Link} to="/kennisbank" size="lg" color="teal">
+              <Button component={Link} to="/kennisbank" size="lg" color="teal.9">
                 Ontdek de Kennisbank
               </Button>
-              <Button component={Link} to="/quiz" size="lg" variant="outline" color="teal">
+              <Button component={Link} to="/quiz" size="lg" variant="outline" color="teal.9">
                 Test je kennis
               </Button>
             </Group>
@@ -30,15 +30,15 @@ export function Home() {
         <SimpleGrid cols={{ base: 1, sm: 3 }} spacing="lg">
           <Paper withBorder p="xl" radius="md" ta="center">
             <Title order={3} c="teal.7" size="2.5rem">12.000+</Title>
-            <Text c="dimmed">Mensen geholpen met digitale vragen</Text>
+            <Text c="gray.7">Mensen geholpen met digitale vragen</Text>
           </Paper>
           <Paper withBorder p="xl" radius="md" ta="center">
             <Title order={3} c="teal.7" size="2.5rem">45</Title>
-            <Text c="dimmed">Aangesloten bibliotheken en buurthuizen</Text>
+            <Text c="gray.7">Aangesloten bibliotheken en buurthuizen</Text>
           </Paper>
           <Paper withBorder p="xl" radius="md" ta="center">
             <Title order={3} c="teal.7" size="2.5rem">98%</Title>
-            <Text c="dimmed">Voelt zich zekerder online na onze cursus</Text>
+            <Text c="gray.7">Voelt zich zekerder online na onze cursus</Text>
           </Paper>
         </SimpleGrid>
       </Container>

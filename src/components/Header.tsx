@@ -24,17 +24,29 @@ export function Header() {
     setColorScheme(theme === 'light' ? 'dark' : 'light');
   };
 
-  const navItems = links.map((link) => (
-    <NavLink
-      key={link.to}
-      component={RouterNavLink}
-      to={link.to}
-      label={link.label}
-      onClick={close}
-      active={location.pathname === link.to}
-      style={{ width: 'auto', borderRadius: '8px' }}
-    />
-  ));
+     const navItems = links.map((link) => {
+    const isActive = location.pathname === link.to;
+    return (
+      <NavLink
+        key={link.to}
+        component={RouterNavLink}
+        to={link.to}
+        label={link.label}
+        onClick={close}
+        active={isActive}
+        style={{
+          width: 'auto',
+          borderRadius: '8px',
+          // Forceer de donkere achtergrond als de link actief is
+          ...(isActive ? { backgroundColor: 'var(--mantine-color-teal-9)' } : {}),
+        }}
+        styles={{
+          // Forceer witte tekst als de link actief is
+          label: { color: isActive ? 'white' : 'inherit' },
+        }}
+      />
+    );
+  });
 
   return (
     <>

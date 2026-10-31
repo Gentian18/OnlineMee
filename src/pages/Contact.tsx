@@ -45,12 +45,12 @@ export function Contact() {
   return (
     <Container size="sm" py="xl">
       <Title order={1} mb="xs" ta="center">Contact & Actie</Title>
-      <Text c="dimmed" ta="center" mb="xl">
+      <Text c="gray.7" ta="center" mb="xl">
         Heb je een vraag, of wil je je aanmelden als vrijwilliger? Laat een bericht achter!
       </Text>
 
       {isSubmitted && (
-        <Alert color="teal" title="Bericht verzonden!" mb="lg" role="status">
+        <Alert color="teal.9" title="Bericht verzonden!" mb="lg" role="status">
           Bedankt voor je bericht. We nemen zo snel mogelijk contact met je op.
         </Alert>
       )}
@@ -103,7 +103,7 @@ export function Contact() {
               />
             </Box>
 
-            <Button type="submit" color="teal" size="md" mt="md">
+            <Button type="submit" color="teal.9" size="md" mt="md">
               Verstuur bericht
             </Button>
           </Stack>

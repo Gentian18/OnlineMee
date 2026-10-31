@@ -63,7 +63,7 @@ export function Quiz() {
             size={180}
             thickness={12}
             roundCaps
-            sections={[{ value: percentage, color: percentage >= 60 ? 'teal' : 'red' }]}
+            sections={[{ value: percentage, color: percentage >= 60 ? 'teal.9' : 'red' }]}
             label={
               <Text c="teal.7" fw={700} ta="center" size="xl">
                 {percentage}%
@@ -75,7 +75,7 @@ export function Quiz() {
           <Text size="lg" mb="xl">
             Je hebt <strong>{score}</strong> van de <strong>{questions.length}</strong> vragen goed beantwoord.
           </Text>
-          <Button onClick={restartQuiz} size="lg" color="teal">
+          <Button onClick={restartQuiz} size="lg" color="teal.9">
             Probeer opnieuw
           </Button>
         </Paper>
@@ -87,12 +87,11 @@ export function Quiz() {
   return (
     <Container size="sm" py="xl">
       <Title order={1} mb="xs" ta="center">Test je Digitale Kennis</Title>
-      <Text c="dimmed" ta="center" mb="xl">Hoeveel weet jij over digitale inclusie?</Text>
+      <Text c="gray.7" ta="center" mb="xl">Hoeveel weet jij over digitale inclusie?</Text>
 
-      <Progress value={progress} mb="xl" color="teal" size="lg" radius="xl" />
-
+<Progress value={progress} mb="xl" color="teal.9" size="lg" radius="xl" aria-label="Voortgang van de quiz" />
       <Paper withBorder p="xl" radius="md">
-        <Text size="sm" c="dimmed" mb="xs">Vraag {currentQuestion + 1} van {questions.length}</Text>
+        <Text size="sm" c="gray.7" mb="xs">Vraag {currentQuestion + 1} van {questions.length}</Text>
         <Title order={3} mb="lg">{question.question}</Title>
 
         <Radio.Group
@@ -116,7 +115,7 @@ export function Quiz() {
         {isAnswered && (
           <Alert 
             mt="xl" 
-            color={parseInt(selectedOption!) === question.correctIndex ? 'teal' : 'red'}
+            color={parseInt(selectedOption!) === question.correctIndex ? 'teal.9' : 'red'}
             title={parseInt(selectedOption!) === question.correctIndex ? 'Helemaal goed!' : 'Helaas, dat is niet juist.'}
           >
             {question.explanation}
@@ -125,11 +124,11 @@ export function Quiz() {
 
         <Group justify="flex-end" mt="xl">
           {!isAnswered ? (
-            <Button onClick={handleAnswer} disabled={!selectedOption} color="teal" size="md">
+            <Button onClick={handleAnswer} disabled={!selectedOption} color="teal.9" size="md">
               Antwoord geven
             </Button>
           ) : (
-            <Button onClick={handleNext} color="teal" size="md">
+            <Button onClick={handleNext} color="teal.9" size="md">
               {currentQuestion === questions.length - 1 ? 'Bekijk resultaat' : 'Volgende vraag'}
             </Button>
           )}

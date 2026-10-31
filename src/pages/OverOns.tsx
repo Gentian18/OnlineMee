@@ -4,7 +4,7 @@ export function OverOns() {
   return (
     <Container size="lg" py="xl">
       <Title order={1} mb="xs" ta="center">Over Ons & Transparantie</Title>
-      <Text c="dimmed" ta="center" mb="xl">
+      <Text c="gray.7" ta="center" mb="xl">
         Wij geloven in een wereld waar niemand wordt buitengesloten door technologie.
       </Text>
 
@@ -25,7 +25,7 @@ export function OverOns() {
               <Title order={3} mb="sm">Contactgegevens</Title>
               <List spacing="xs" size="sm">
                 <List.Item><strong>Adres:</strong> Digitaal Plein 1, 1000 AB Amsterdam</List.Item>
-                <List.Item><strong>E-mail:</strong> <Anchor href="mailto:info@onlinemee.nl">info@onlinemee.nl</Anchor></List.Item>
+                <List.Item><strong>E-mail:</strong> <Anchor href="mailto:info@onlinemee.nl" c="teal.9">info@onlinemee.nl</Anchor></List.Item>
                 <List.Item><strong>Telefoon:</strong> 020 - 123 45 67 (Ma-Vr, 9:00 - 17:00)</List.Item>
                 <List.Item><strong>KBO-nummer:</strong> 12345678</List.Item>
               </List>
@@ -75,7 +75,7 @@ export function OverOns() {
       {/* Team sectie (optioneel, maar leuk voor de sfeer) */}
       <Box mt="xl">
         <Title order={3} mb="md" ta="center">Ons Team</Title>
-        <Text ta="center" size="sm" c="dimmed">
+        <Text ta="center" size="sm" c="gray.7">
           Een team van gepassioneerde developers, docenten en vrijwilligers zet zich dagelijks in voor dit platform.
         </Text>
       </Box>

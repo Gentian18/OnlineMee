@@ -25,7 +25,7 @@ export function Kennisbank() {
   if (isLoading) {
     return (
       <Container size="xl" py="xl" ta="center">
-        <Loader color="teal" size="lg" />
+        <Loader color="teal.9" size="lg" />
         <Text mt="md">Kennisbank aan het laden...</Text>
       </Container>
     );
@@ -42,7 +42,7 @@ export function Kennisbank() {
   return (
     <Container size="xl" py="xl">
       <Title order={1} mb="xs" ta="center">Kennisbank</Title>
-      <Text c="dimmed" mb="xl" ta="center">
+      <Text c="gray.7" mb="xl" ta="center">
         Ontdek onze artikelen en tips over digitale inclusie.
       </Text>
 
@@ -78,16 +78,16 @@ export function Kennisbank() {
             <Card key={item.id} shadow="sm" padding="lg" radius="md" withBorder>
               <Group justify="space-between" mb="xs">
                 <Title order={3} size="h4">{item.title}</Title>
-                <Badge color="teal" variant="light">{item.category}</Badge>
+                <Badge color="teal.9" variant="filled">{item.category}</Badge>
               </Group>
-              <Text size="sm" c="dimmed" mb="md">{item.summary}</Text>
+              <Text size="sm" c="gray.7" mb="md">{item.summary}</Text>
               
               <Accordion variant="contained" radius="md">
                 <Accordion.Item value="details">
                   <Accordion.Control>Lees meer</Accordion.Control>
                   <Accordion.Panel>
                     <Text size="sm" mb="md">{item.content}</Text>
-                    <Text size="xs" c="dimmed">
+                    <Text size="xs" c="gray.7">
                       Bron: <a href={item.source} target="_blank" rel="noreferrer" style={{ color: 'var(--mantine-color-teal-6)' }}>{item.source}</a>
                     </Text>
                   </Accordion.Panel>

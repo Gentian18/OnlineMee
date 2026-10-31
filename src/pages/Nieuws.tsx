@@ -35,7 +35,7 @@ export function Nieuws() {
   return (
     <Container size="xl" py="xl">
       <Title order={1} mb="xs" ta="center">Nieuws & Actualiteiten</Title>
-      <Text c="dimmed" ta="center" mb="xl" maw={600} mx="auto">
+      <Text c="gray.7" ta="center" mb="xl" maw={600} mx="auto">
         Blijf op de hoogte van de laatste ontwikkelingen rondom digitale inclusie en onze projecten.
       </Text>
 
@@ -43,11 +43,11 @@ export function Nieuws() {
         {nieuwsItems.map((item) => (
           <Card key={item.id} shadow="sm" padding="lg" radius="md" withBorder>
             <Group justify="space-between" mb="md">
-              <Badge color="teal" variant="light">{item.category}</Badge>
-              <Text size="sm" c="dimmed">{item.date}</Text>
+              <Badge color="teal.9" variant="filled"/>
+              <Text size="sm" c="gray.7">{item.date}</Text>
             </Group>
             <Title order={3} size="h4" mb="sm">{item.title}</Title>
-            <Text size="sm" c="dimmed">
+            <Text size="sm" c="gray.7">
               {item.excerpt}
             </Text>
           </Card>

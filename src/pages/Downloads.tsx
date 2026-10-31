@@ -25,7 +25,7 @@ export function Downloads() {
   return (
     <Container size="xl" py="xl">
       <Title order={1} mb="xs" ta="center">Downloads & Hulpmiddelen</Title>
-      <Text c="dimmed" ta="center" mb="xl" maw={600} mx="auto">
+      <Text c="gray.7" ta="center" mb="xl" maw={600} mx="auto">
         Gratis materialen om jezelf, je team of je studenten te helpen bij het creëren van een inclusiever internet.
       </Text>
 
@@ -34,7 +34,7 @@ export function Downloads() {
           <Card key={item.id} shadow="sm" padding="lg" radius="md" withBorder style={{ display: 'flex', flexDirection: 'column' }}>
             <Card.Section withBorder inheritPadding py="xs" mb="md">
               <Group>
-                <ThemeIcon color="teal" variant="light" size="lg">
+                <ThemeIcon color="teal.9" variant="light" size="lg">
                   📄
                 </ThemeIcon>
                 <Text fw={500}>{item.type}</Text>
@@ -42,13 +42,13 @@ export function Downloads() {
             </Card.Section>
             
             <Title order={3} size="h4" mb="sm">{item.title}</Title>
-            <Text size="sm" c="dimmed" mb="xl" style={{ flexGrow: 1 }}>
+            <Text size="sm" c="gray.7" mb="xl" style={{ flexGrow: 1 }}>
               {item.description}
             </Text>
             
             <Button 
-              color="teal" 
-              variant="light" 
+              color="teal.9" 
+              variant="filled" 
               fullWidth 
               component="a" 
               href="#" 

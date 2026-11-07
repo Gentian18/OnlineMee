@@ -106,3 +106,5 @@ Alhoewel AI gebruik toegestaan is, raden we dit ten zeerste af.
 Deze opdracht is vooral bedoeld om je te laten oefenen met React en je voor te bereiden op het examen, waar AI slechts
 in zeer beperkte mate toegestaan is.
 Als je gebruik maakt van AI, werkt dit in jouw nadeel aangezien je jezelf zo minder goed voorbereidt op het examen.
+
+Hier is de siteUrl: https://onlinemee.netlify.app/

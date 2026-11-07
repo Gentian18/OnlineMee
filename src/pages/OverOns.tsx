@@ -1,4 +1,4 @@
-import { Container, Title, Text, Paper, Grid, Stack, Accordion, List, Anchor, Group, Box } from '@mantine/core';
+import { Container, Title, Text, Paper, Grid, Stack, Accordion, List, Anchor, Box } from '@mantine/core';
 
 export function OverOns() {
   return (
